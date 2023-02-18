@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "build-dev": "webpack --config webpack.config.js",
-    "build-server": "webpack --config webpack.server.config.js"
+    "build-server": "webpack --config webpack.server.config.js",
+    "build": "npm run build-dev && npm run build-server",
+    "start": "node dist/server.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
